@@ -23,18 +23,16 @@
 </section>
 --->
 
-<section>
-    <div class="row full-width">
-      <div class="center-text vertical-middle">
-        <img class="width-20" src="https://jupyter.org/assets/hublogo.svg">
-        <p class="lblBienvenida margin-top">Bienvenido a la plataforma</p>
-        <p class="lblBienvenida">JupyterHub <span class="lblBienvenida orange">UTPL</span></p>
-        <a href="/hub/oauth_login?next=">
-          <img src="https://www.thoughtworks.com/imgs/icons/social/github.png" class="margin-top" height="100px" width="100px"/>    
-        </a>
-      </div>
+<div class="center-text full-width vertical-middle">
+  <div class="center-text">
+    <img class="width-20" src="https://jupyter.org/assets/hublogo.svg">
+    <p class="lblBienvenida margin-top">Bienvenido a la plataforma</p>
+    <p class="lblBienvenida">JupyterHub <span class="lblBienvenida orange">UTPL</span></p>
+    <a href="/hub/oauth_login?next=">
+      <img src="https://www.thoughtworks.com/imgs/icons/social/github.png" class="margin-top" height="100px" width="100px"/>    
+    </a>
   </div>
-</section>
+</div>
 
 {% endblock login %}
 
@@ -59,7 +57,8 @@
   }
 
   .vertical-middle{
-    vertical-align: middle;
+    position: absolute;
+    top: 25%;
   }
 
   .lblBienvenida{
